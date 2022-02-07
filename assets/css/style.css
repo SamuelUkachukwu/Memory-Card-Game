@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:wght@700&family=Raleway&display=swap');
-*{
-    margin:0;
-    padding:0;
+
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Raleway', sans-serif;
 }
+
 #header {
     padding: 50px;
     display: flex;
@@ -14,28 +17,34 @@ body {
     align-content: center;
     text-align: center;
 }
-a{
+
+a {
     text-decoration: none;
 }
-#game-name{
+
+#game-name {
     font-family: 'Old Standard TT', serif;
     font-size: 300%;
     color: darkblue;
 }
+
 .container {
-        /* background-color: brown; */
-        width: 100%;
-        height: 55vh;
-        display: inline-block;
-        text-align: center;
-        padding: 50px;
+    /* background-color: brown; */
+    width: 100%;
+    height: 55vh;
+    display: inline-block;
+    text-align: center;
+    padding: 50px;
 }
+
 .messages {
     padding: 20px;
 }
+
 .button-container {
     margin-top: 50px;
 }
+
 .button-container button {
     text-align: center;
     margin-right: 30px;
@@ -45,18 +54,25 @@ a{
     border-radius: 5px;
     box-shadow: 2px 2px 2px darkblue;
 }
+
 #username {
     padding: 10px;
     height: 30px;
 }
+#username-text {
+    font-family: 'Old Standard TT', serif;
+    font-size: 18px;
+}
+
 footer {
     width: 100%;
     padding: 20px;
     background-color: chartreuse;
     position: absolute;
     bottom: 0;
-    left:0;
+    left: 0;
 }
+
 /* media screen for devices and screen size 600px */
 @media screen and (max-width: 600px) {
     .button-container button {
