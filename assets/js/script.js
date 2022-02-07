@@ -32,7 +32,7 @@ function gameSelect() {
     let secondMessageBox = document.querySelector('.container');
     secondMessageBox.innerHTML =
         `<div class="messages">
-            <p>Welcome <span id="username-text">${username} </span> Select any of the buttons below to set difficulty level</p>
+            <p>Welcome <span id="username-text" class="stylized-txt">${username} </span> Select any of the buttons below to set difficulty level</p>
         </div>
         <div class="button-container">
             <a href="../sixteen.html"><button>16 Cards</button></a>

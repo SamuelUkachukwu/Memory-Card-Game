@@ -21,9 +21,10 @@ body {
 a {
     text-decoration: none;
 }
-
-.game-name {
+.stylized-txt{
     font-family: 'Old Standard TT', serif;
+}
+.game-name {
     font-size: 300%;
     color: darkblue;
 }
@@ -60,7 +61,6 @@ a {
     height: 30px;
 }
 #username-text {
-    font-family: 'Old Standard TT', serif;
     font-size: 18px;
 }
 /* styling for game pages */
@@ -74,11 +74,10 @@ a {
   /* .game-title{
    text-align: center;
   } */
-  /*.play-button{
-      margin: 0 auto;
-  }*/
+  .play-button{
+     font-size: 200%;
+  }
   .timer{
-    font-family: 'Old Standard TT', serif;
     font-size: 200%;
   } 
   .main-container{
@@ -152,7 +151,7 @@ footer {
         display:inline-block;
     }
  .play-button{
-  float:right;
+  float:left;
   }
   .timer{
       float:right;
