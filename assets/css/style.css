@@ -10,7 +10,7 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-#header {
+#game-title-box {
     padding: 50px;
     display: flex;
     justify-content: center;
@@ -22,7 +22,7 @@ a {
     text-decoration: none;
 }
 
-#game-name {
+.game-name {
     font-family: 'Old Standard TT', serif;
     font-size: 300%;
     color: darkblue;
@@ -63,7 +63,79 @@ a {
     font-family: 'Old Standard TT', serif;
     font-size: 18px;
 }
+/* styling for game pages */
+.header {
+    line-height: 75px;
+    margin: 0px 30px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  /* .game-title{
+   text-align: center;
+  } */
+  /*.play-button{
+      margin: 0 auto;
+  }*/
+  .timer{
+    font-family: 'Old Standard TT', serif;
+    font-size: 200%;
+  } 
+  .main-container{
+    margin: 0 auto;
+  }
+  .card-container {
+    clear: both;
+    display: grid;
+    grid-template-columns:repeat(4, auto);
+    grid-gap: 10px;
+    margin:10px 50px;
+    justify-content: center;
+    /* background-color: blueviolet; */
+  }
+  .card{
+    width: 90px;
+    height: 110px;
+    border-radius: 5px;
+    background-color: blueviolet;
+    position: relative;
+  
+    /* card transition  */
+    transform-style: preserve-3d;
+  transition: all 0.6s;
+  transition-timing-function: ease-in-out;
+  /* box-shadow: 2px 2px 2px blue; */
+  }
+  .card:hover{
+    transform: rotateY(180deg);
+  }
+  .front{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: red;
+    border-radius: 5px;
+    backface-visibility: hidden;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 2px 2px rgb(108, 108, 175);
+  }
+  .back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background-color: green;
+  backface-visibility: hidden;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(180deg);
+  box-shadow: 2px 2px 2px rgb(172, 172, 221);
+  }
 
+  /* styling for footer starts here */
 footer {
     width: 100%;
     padding: 20px;
@@ -73,8 +145,24 @@ footer {
     left: 0;
 }
 
+/* media querry styling start here */
 /* media screen for devices and screen size 600px */
 @media screen and (max-width: 600px) {
+    .header{
+        display:inline-block;
+    }
+ .play-button{
+  float:right;
+  }
+  .timer{
+      float:right;
+  }
+    .card{
+        width: 70px;
+        height: 110px;
+        border-radius: 5px;
+        background-color: blueviolet;
+      }
     .button-container button {
         margin-right: 0;
         margin-top: 10px;
