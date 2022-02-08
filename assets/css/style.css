@@ -21,9 +21,11 @@ body {
 a {
     text-decoration: none;
 }
-.stylized-txt{
+
+.stylized-txt {
     font-family: 'Old Standard TT', serif;
 }
+
 .game-name {
     font-size: 250%;
     color: darkblue;
@@ -60,82 +62,100 @@ a {
     padding: 10px;
     height: 30px;
 }
+
 #username-text {
     font-size: 18px;
 }
+
 /* styling for game pages */
 .header {
     line-height: 75px;
     margin: 0px 30px;
-    display:flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  /* .game-title{
+}
+
+/* .game-title{
    text-align: center;
   } */
-  .play-button{
-     font-size: 200%;
-  }
-  .timer{
+.play-button {
     font-size: 200%;
-  } 
-  .main-container{
+}
+
+.timer {
+    font-size: 200%;
+}
+
+.main-container {
     margin: 0 auto;
-  }
-  .card-container {
+}
+
+.card-container {
     clear: both;
     display: grid;
-    grid-template-columns:repeat(4, auto);
+    grid-template-columns: repeat(4, auto);
     grid-gap: 10px;
-    margin:10px 50px;
+    margin: 10px 50px;
     justify-content: center;
     /* background-color: blueviolet; */
-  }
-  .card{
+}
+
+.card {
     width: 90px;
     height: 110px;
     border-radius: 5px;
     /* background-color: blueviolet; */
     position: relative;
-  
+
     /* card transition  */
     transform-style: preserve-3d;
-  transition: all 0.6s;
-  transition-timing-function: ease-in-out;
-  /* box-shadow: 2px 2px 2px blue; */
-  }
-  .card:hover{
+    transition: all 0.6s;
+    transition-timing-function: ease-in-out;
+    /* box-shadow: 2px 2px 2px blue; */
+}
+
+.card:hover {
     transform: rotateY(180deg);
-  }
-  .front{
+}
+
+.front {
     width: 100%;
     height: 100%;
     position: absolute;
-    background: pink;
-    background-image: linear-gradient(to bottom right, red, yellow);
+    background: #FF2520;
+    background-image: linear-gradient(to bottom right, #FF2520, #FFD30E);
     border-radius: 5px;
     backface-visibility: hidden;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 2px 2px 2px rgb(108, 108, 175);
-  }
-  .back{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  border-radius: 5px;
-  /* background-color: green; */
-  backface-visibility: hidden;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  transform: rotateY(180deg);
-  box-shadow: 2px 2px 2px rgb(172, 172, 221);
-  }
+}
 
-  /* styling for footer starts here */
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    /* background-color: green; */
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+    box-shadow: 2px 2px 2px #A7A7A8;
+}
+
+img {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* styling for footer starts here */
 footer {
     width: 100%;
     padding: 20px;
@@ -148,21 +168,25 @@ footer {
 /* media querry styling start here */
 /* media screen for devices and screen size 600px */
 @media screen and (max-width: 600px) {
-    .header{
-        display:inline-block;
+    .header {
+        display: inline-block;
     }
- .play-button{
-  float:left;
-  }
-  .timer{
-      float:right;
-  }
-    .card{
+
+    .play-button {
+        float: left;
+    }
+
+    .timer {
+        float: right;
+    }
+
+    .card {
         width: 70px;
         height: 110px;
         border-radius: 5px;
         /* background-color: blueviolet; */
-      }
+    }
+
     .button-container button {
         margin-right: 0;
         margin-top: 10px;
